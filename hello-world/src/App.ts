@@ -6,4 +6,8 @@ const bootstrap = async () => {
     await server.start();
 };
 
-bootstrap();
+bootstrap()
+    .then(() => {
+        console.log('API started.');
+    })
+    .catch(console.error);

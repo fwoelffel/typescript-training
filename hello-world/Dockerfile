@@ -6,6 +6,5 @@ RUN npm run build
 
 FROM node:carbon-alpine
 WORKDIR /opt/app
-COPY --from=builder /tmp/build/dist/ ./
-ENTRYPOINT node
-CMD App.js
+COPY --from=builder /tmp/build/ ./
+CMD npm start

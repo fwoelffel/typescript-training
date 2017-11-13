@@ -1,0 +1,12 @@
+{
+  "type": "postgres",
+  "host": "db",
+  "username": "user",
+  "password": "password",
+  "database": "db",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "entity/*.js"
+  ]
+}

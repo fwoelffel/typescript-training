@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: user
+      POSTGRES_DB: db
+  api:
+    build: ./hello-world
+    ports:
+      - "3000:3000"
